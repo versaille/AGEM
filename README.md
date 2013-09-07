@@ -40,7 +40,7 @@ In summary, the format has three columns: genes in one genome, genes in the othe
 There could be many ways, but here the typical alignment tool NCBI Blast is taken as an example. 
 
 1. Install standalone NCBI Blast so you can command run every NCBI Blast function on a server or a local machine. The most useful functions include building blast database from sequence data you generated or downloaded, run all kinds of sequence alignment and select the output file format. To install and use standalone NCBI Blast, please read NCBI help book: http://www.ncbi.nlm.nih.gov/books/NBK52640/
-2. Build blast database of genome A and B; choose appropriate command to run blast according to your sequence type; when you run blast, do specify the output format in output format option. For more details on output format option, type blast command with help option(e.g. blastp -help).  Output format option 6 is recommendated. 
+2. Build blast database of a genome; choose appropriate command to run blast according to your sequence type; when you run blast, do specify the output format in output format option. For more details on output format option, type blast command with help option(e.g. blastp -help).  Output format option 6 is recommendated. 
 3. If you choose output format option 6, the results you get should be table-like. Some columns of the result table are properties such as alignment length and percent identity with which you can prune the alignment results. 
 4. From the filtered result table, you can grep column 1(gene ids of genome A), column 2(gene ids of genome B) and the last column (bit score) to format the input file. 
 
